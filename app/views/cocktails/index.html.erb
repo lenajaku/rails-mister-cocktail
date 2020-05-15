@@ -2,19 +2,20 @@
   <div class="container">
     <h1>Welcome to Mister Cocktail!</h1>
 </div>
+<div>
+<a><%= link_to 'Create your own cocktail', new_cocktail_path, class: "btn btn-ghost" %>
+</div>
 </div>
 
 
-
-<h1>My cocktails</h1>
-<div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+<div>
+  <h1>My cocktails</h1>
+  </div>
     <% @cocktails.each do |cocktail|%>
+     <div class="cards" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.dribbble.com/users/297873/screenshots/9896590/media/b5c7d07792d341d7aabd08db8ab9e8f9.jpg)">
     <%= link_to cocktail.name, cocktail_path(cocktail)  %>
     <% end %>
   </div>
 </div>
 
-<div>
-<a><%= link_to 'Add a new cocktail', new_cocktail_path, class: "btn btn-ghost" %>
-</div>
+

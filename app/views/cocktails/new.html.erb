@@ -1,6 +1,12 @@
-<h1>Create a new cocktail</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.dribbble.com/users/297873/screenshots/8073931/media/7d0dee822daca7201af0dcce1821a721.jpg);">
+  <div class="container">
+    <h1>Time to create your own cocktail!</h1>
+</div>
+</div>
 
+<div class="form">
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name %>
   <%= f.button :submit, class: 'btn btn-primary' %>
 <% end %>
+</div>
